@@ -39,6 +39,9 @@ request.onload = function() {
 
         });
     } else {
+        const errorMessage = document.createElement('marquee');
+        errorMessage.textContent = `We don' goofed!`;
+        app.appendChild(errorMessage);
         console.log('error!!!!')
     }
 }
